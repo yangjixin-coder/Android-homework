@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/course_navigation"
+    app:startDestination="@id/course_introduce2">
+
+    <fragment
+        android:id="@+id/course_introduce2"
+        android:name="com.example.e_learning.course_introduce"
+        android:label="fragment_course_introduce"
+        tools:layout="@layout/fragment_course_introduce" />
+    <fragment
+        android:id="@+id/course_catalogue2"
+        android:name="com.example.e_learning.course_catalogue"
+        android:label="fragment_course_catalogue"
+        tools:layout="@layout/fragment_course_catalogue" />
+    <fragment
+        android:id="@+id/course_evaluation2"
+        android:name="com.example.e_learning.course_evaluation"
+        android:label="fragment_course_evaluation"
+        tools:layout="@layout/fragment_course_evaluation" />
+</navigation>

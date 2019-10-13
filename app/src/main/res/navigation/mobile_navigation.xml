@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@id/shouye">
+
+    <fragment
+        android:id="@+id/shouye"
+        android:name="com.example.e_learning.shouye"
+        android:label="fragment_shouye"
+        tools:layout="@layout/fragment_shouye" />
+    <fragment
+        android:id="@+id/allcourse"
+        android:name="com.example.e_learning.allcourse"
+        android:label="fragment_allcourse"
+        tools:layout="@layout/fragment_allcourse" />
+    <fragment
+        android:id="@+id/mylearn"
+        android:name="com.example.e_learning.mylearn"
+        android:label="fragment_mylearn"
+        tools:layout="@layout/fragment_mylearn" >
+        <action
+            android:id="@+id/action_mylearn_to_courseIntroduction"
+            app:destination="@id/courseIntroduction" />
+    </fragment>
+    <fragment
+        android:id="@+id/personal"
+        android:name="com.example.e_learning.personal"
+        android:label="fragment_personal"
+        tools:layout="@layout/fragment_personal" >
+        <action
+            android:id="@+id/action_personal_to_loginActivity"
+            app:destination="@id/loginActivity" />
+    </fragment>
+    <activity
+        android:id="@+id/loginActivity"
+        android:name="com.example.e_learning.ui.login.LoginActivity"
+        android:label="activity_login"
+        tools:layout="@layout/activity_login" />
+    <fragment
+        android:id="@+id/courseIntroduction"
+        android:name="com.example.e_learning.CourseIntroduction"
+        android:label="fragment_course_introduction"
+        tools:layout="@layout/fragment_course_introduction" />
+
+</navigation>
